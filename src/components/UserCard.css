@@ -1,0 +1,12 @@
+.user-card {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .user-card i {
+    font-size: 24px;
+  }
+  

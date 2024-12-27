@@ -1,0 +1,49 @@
+.prefix-container {
+    padding: 20px;
+    margin: 3rem 20rem;
+    width: 75%;
+  }
+  
+  .prefix-scroll-container {
+    max-height: 400px; /* Set height for scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .prefix-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .prefix-label {
+    width: 50%;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .prefix-input {
+    width: 45%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .prefix-save-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .prefix-save-button:hover {
+    background-color: #0056b3;
+  }
+  

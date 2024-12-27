@@ -1,0 +1,65 @@
+.sho {
+    width: 65rem;
+    height: auto;
+    margin: 4rem 14.5rem;
+    background-color: rgb(207, 232, 241);
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.he {
+    margin-left: 3rem;
+}
+
+.form-container {
+    margin: 2rem 1rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 2rem; /* Row and column gaps */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.button-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

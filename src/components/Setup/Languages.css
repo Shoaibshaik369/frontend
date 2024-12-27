@@ -1,0 +1,113 @@
+.languages-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 67rem;
+    margin: 5rem 22rem;
+    max-height: 80vh; /* Set a max height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .header button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-language-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .add-language-form input[type='text'] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .add-language-form label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+  
+  .languages-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .languages-table th,
+  .languages-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .languages-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .languages-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .languages-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .language-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .flag-icon {
+    width: 20px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .languages-table button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .languages-table button:hover {
+    background-color: #218838;
+  }
+  
+  .languages-table button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  

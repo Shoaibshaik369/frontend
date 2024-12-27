@@ -1,0 +1,91 @@
+.topbar {
+    background-color: #72b6ff;
+    color: white;
+    width: 100%;
+    position: fixed;
+  }
+  .topbar input {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: 500;
+    color: #b0aeae;
+    margin-right: 2.5rem;
+    width: 14rem;
+  }
+  
+
+
+ 
+ .ic {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  padding: 1rem;
+  color: white;
+ }
+
+ .ic:hover {
+  background-color: #2174cd;
+ }
+
+ .ht {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .fb {
+  width: 16px;
+  height: 16px;
+  margin-right: 1rem;
+ }
+
+ .hi {
+  margin-left: 1rem;
+ }
+
+ .hi {
+  width: 23px;
+  height: 23px;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+
+ }
+ 
+ .hi:hover {
+  width: 22px;
+  height: 22px;
+ }
+
+ /* Styles for the bubble pop-up */
+.icon-with-bubble {
+  position: relative;
+  display: inline-block;
+}
+
+.bubble {
+  position: absolute;
+  top: 53px; /* Adjust to position the bubble below the icon */
+  right: 0; /* Align with the right edge of the icon */
+  background-color: white;
+  color: black;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 200px;
+  font-size: 14px;
+}
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 2px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}

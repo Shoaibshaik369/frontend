@@ -1,0 +1,143 @@
+.sidebar {
+  width: 250px; /* Default width */
+  background-color: #f8f9fa;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  scrollbar-width: thin; /* Makes the scrollbar thinner (for Firefox) */
+  scrollbar-color: #ccc transparent; /* Colors for the scrollbar */
+  transition: width 0.3s ease; /* Smooth transition for toggling */
+}
+
+.sidebar.collapsed {
+  width: 60px; /* Collapsed width */
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center; /* Keep alignment consistent */
+  color: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative; /* Allows absolute positioning for hidden text */
+  font-weight: 100;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+  color: #5cc6f3;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+}
+
+.menu-item .icon {
+  margin-right: 10px;
+}
+
+.sidebar.collapsed .menu-item .icon {
+  margin-right: 10px; /* Ensure icons stay aligned in collapsed view */
+}
+
+.sidebar.collapsed .menu-item span:not(.icon) {
+  visibility: hidden; /* Hide text but keep the layout intact */
+  opacity: 0; /* Ensure it's invisible */
+  position: absolute; /* Position it out of view */
+  left: 60px; /* Keeps the hidden text out of the visible area */
+}
+
+.dropdown {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.sidebar.collapsed .dropdown {
+  display: none; /* Hide dropdown items in collapsed state */
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #ddd;
+  color: #5cc6f3;
+}
+
+.menu-item .icon {
+  margin-right: 10px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Scrollbar color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa; /* Darker when hovered */
+}
+
+.toggle-btn {
+  padding: 10px;
+  background-color: #ddd;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  width: 300px;
+  height: 60px;
+  margin-top: 9px;
+  background-color: #007bff;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* Highlight for the active menu item */
+.menu-item.active {
+  background-color: #9ecdff6e; /* Active item background color */
+  color: #6589ff; /* Active item text color */
+  font-weight: bold; /* Optional: Make the active item bold */
+}
+
+.dropdown-item.active {
+  background-color: #9ecdff6e; /* Active dropdown item background */
+  color: #6589ff; /* Active dropdown text color */
+  font-weight: bold; /* Optional: Bold font for dropdown items */
+}
+
+/* Parent menu-item active when dropdown-item is active */
+.menu-item:has(.dropdown-item.active) {
+  background-color: #9ecdff6e; /* Active background for parent menu-item */
+  color: #6589ff; /* Active text color for parent menu-item */
+  font-weight: bold; /* Optional: Bold font for active parent */
+}
+
+.menu-item:has(.dropdown-item.active) .icon {
+  color: #6589ff; /* Highlight the icon for active parent */
+}
+
+/* Retain dropdown-item specific styles */
+.dropdown-item.active {
+  background-color: #9ecdff6e; /* Active dropdown item background */
+  color: #6589ff; /* Active dropdown text color */
+  font-weight: bold; /* Ensure dropdown-item styles remain intact */
+}

@@ -1,0 +1,62 @@
+/* Ensure the layout spans full width */
+.app {
+  display: flex; /* Sidebar and Main Content are side-by-side */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.sidebar {
+  width: 240px; /* Fixed width for the sidebar */
+  height: 100%;
+  background-color: #eef6ff; /* Dark sidebar */
+  color: white;
+  flex-shrink: 0; /* Prevent sidebar from shrinking */
+  margin-left: 0.5rem
+}
+
+.main-content {
+  flex: 1; /* Occupies the rest of the width */
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  width: 79%; /* Ensure it spans the entire main-content area */
+  height: 60px; /* Standard height for the Topbar */
+  background-color: #007bff; /* Blue background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Space around inner items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-left: 14.9rem;
+}
+
+.content {
+  flex: 1; /* Allow content to grow and fill the space below the Topbar */
+  padding: 20px; /* Padding around content for spacing */
+  overflow-y: auto; /* Scrollable content area */
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr; /* Single column */
+}
+
+.gap-4 {
+  gap: 16px; /* Gap between grid items */
+}
+
+.mt-4 {
+  margin-top: 16px;
+}

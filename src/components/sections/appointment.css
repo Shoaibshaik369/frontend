@@ -1,0 +1,158 @@
+/* Button Style */
+.appointment-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 1rem;
+}
+
+.appointment-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Container */
+.table-container {
+  max-height: 400px; /* Adjust height based on your design */
+  overflow-y: auto;  /* Enables vertical scroll */
+  margin-top: 1rem;
+}
+
+/* Table Styles */
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.appointments-table th {
+  background-color: #f7f7f7;
+  color: #333;
+  font-weight: bold;
+}
+
+.appointments-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 900px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-height: 80vh; /* Set a max-height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds max-height */
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Form Inputs */
+.modal-content form input,
+.modal-content form select {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.modal-content form input:focus,
+.modal-content form select:focus {
+  border-color: #007bff;
+}
+
+/* Modal Actions */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-actions button[type="button"] {
+  background-color: #ccc;
+  color: black;
+}
+
+.modal-actions button[type="button"]:hover {
+  background-color: #bbb;
+}
+
+.modal-actions button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-actions button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Appoint Styles */
+.appoint {
+  margin: 5rem 16.5rem;
+  width: 70%;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .appoint {
+    margin: 2rem;
+    width: 95%;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+}

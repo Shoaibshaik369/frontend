@@ -1,0 +1,36 @@
+.notifications-settings {
+    margin: 6rem 11rem;
+    width: 90%;
+    height: 50rem;
+    overflow:auto;
+  }
+  
+  .notifications-settings h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .notification-table {
+   width: 61rem;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .notification-table th,
+  .notification-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .notification-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .notification-table td label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  

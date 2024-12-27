@@ -1,0 +1,64 @@
+.front-cms-container {
+    padding: 20px;
+    width: 61.3rem;
+    margin: 0rem 15rem;
+    margin-top: 4rem;
+    overflow: scroll;
+  }
+  
+  .front-cms-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  
+  .left-section,
+  .right-section {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .toggle-group,
+  .text-input,
+  .checkbox-group,
+  .file-upload {
+    margin-bottom: 15px;
+  }
+  
+  .toggle-group label,
+  .text-input label,
+  .checkbox-group label,
+  .file-upload label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .toggle-group input[type="checkbox"],
+  .checkbox-group input[type="checkbox"] {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .checkbox-group div {
+    margin-top: 10px;
+  }
+  
+  .text-input input,
+  .text-input textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .file-upload input {
+    width: 100%;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
